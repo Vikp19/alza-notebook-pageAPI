@@ -1,0 +1,54 @@
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 32px;
+}
+
+.button {
+  padding: 0.75rem 1.25rem;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.875rem;
+  line-height: 1;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.button:hover {
+  background-color: #e5e5e5;
+}
+
+.active {
+  background-color: #dcdcdc;
+  border-color: #999;
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    gap: 10px;
+  }
+
+  .button {
+    padding: 0.65rem 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .wrapper {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding-bottom: 4px;
+  }
+
+  .wrapper::-webkit-scrollbar {
+    display: none;
+  }
+
+  .button {
+    font-size: 0.8125rem;
+  }
+}
