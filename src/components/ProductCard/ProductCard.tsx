@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from "react";
-import type { ProductCard as Product } from "../../api/products/products.types";
+import type { ProductCard as Product } from "../../api/products.types";
 import styles from "./ProductCard.module.css";
 
 interface Props {
